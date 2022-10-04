@@ -40,9 +40,9 @@ body{
 
 a{color: #F9F7F5; text-decoration:none;}
 a.current{color: #F9F7F5;}
-a.current:hover{color: #F9F7F5;}
-a:hover{color: #F9F7F5;}
-a:active{color: #F9F7F5;}
+a.current:hover{color: #52739e;}
+a:hover{color: #F9F7F5;}*/
+
 
 /*
 a{color: #b8860b; text-decoration:none;}
@@ -99,7 +99,6 @@ th,td{
 table.navigation{width:800px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:10px 10px 10px 10px;background-color: #1a2238}
 td.navigation:hover{background-color: #52739e}
-td.navigation:current{background-color: #52739e}
 
 /* Sponsor Images */
 table.sponsors{width:800px;}
