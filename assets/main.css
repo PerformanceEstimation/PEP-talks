@@ -37,12 +37,19 @@ body{
     width: 1000px;
 }
 
+
 a{color: #F9F7F5; text-decoration:none;}
-a.current{color: #ed8780;}
-a.current:hover{color: #ed8780;}
+a.current{color: #F9F7F5;}
+a.current:hover{color: #F9F7F5;}
 a:hover{color: #F9F7F5;}
 a:active{color: #F9F7F5;}
 
+/*
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #e82945;}
+a:hover{color: #b2132e;}
+a:active{color: #e82945;}*/
 h1,h2,h3,h4{clear:left; color: #52739e; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 h1{font-size:2.67em;}
 h2{font-size:2.00em;}
@@ -92,6 +99,7 @@ th,td{
 table.navigation{width:800px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:10px 10px 10px 10px;background-color: #1a2238}
 td.navigation:hover{background-color: #52739e}
+td.navigation:current{background-color: #52739e}
 
 /* Sponsor Images */
 table.sponsors{width:800px;}
