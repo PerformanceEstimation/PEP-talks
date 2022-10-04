@@ -39,9 +39,9 @@ body{
 
 
 a{color: #F9F7F5; text-decoration:none;}
-a.current{color: #F9F7F5;}
-a.current:hover{color: #52739e;}
-a:hover{color: #F9F7F5;}*/
+a.current{color:#fc3a5b;}
+a.current:hover{color: #fc3a5b;}
+a:hover{color: #F9F7F5;}
 
 
 /*
