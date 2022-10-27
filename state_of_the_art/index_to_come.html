@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <link rel="stylesheet" type="text/css" media="all" href="main_sota.css"/>
+    <meta name="description" content="Conference">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>PEP Talks</title>
+</head>
+
+<body>
+
+<br>
+    <h1>Performance Estimation Platform - State of the Art</h1>
+<br>
+
+
+<p>
+    This page aims at centralizing main PEP related papers with short summary of the latter. <br>
+</p>
+
+<p>
+    Visit the page about <a title="PEP Talks February 2023" href="../february_2023/index.html">PEP Talks February 2023</a>.
+</p>
+
+
+    <table>
+        <tr>
+            <td class="title-special">
+                Performance of first-order methods for smooth convex minimization:<br> a novel approach.
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>
+                    We introduce a novel approach for analyzing the performance of first-order blackbox optimization methods.
+                    We focus on smooth unconstrained convex minimization
+                    over the Euclidean space Rd. Our approach relies on the observation that by definition,
+                    the worst case behavior of a black-box optimization method is by itself an optimization
+                    problem, which we call the Performance Estimation Problem (PEP). We formulate and
+                    analyze the PEP for two classes of first-order algorithms. We first apply this approach
+                    on the classical gradient method and derive a new and tight analytical bound on its
+                    performance. We then consider a broader class of first-order black-box methods, which
+                    among others, include the so-called heavy-ball method and the fast gradient schemes.
+                    We show that for this broader class, it is possible to derive new numerical bounds on
+                    the performance of these methods by solving an adequately relaxed convex semidefinite
+                    PEP. Finally, we show an efficient procedure for finding optimal step sizes which results
+                    in a first-order black-box method that achieves best performance.
+                </p>
+
+                <div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle" tabindex="0"><i style="font-size: 14px;">Show bibtex entry</i></label><div class="collapsible-content"><div class="content-inner"><div class="proof" id="proof-Chebyshev">
+
+                <pre>
+                    <code>
+                        @article{drori2014performance,
+                          title={Performance of first-order methods for smooth convex minimization: a novel approach},
+                          author={Drori, Yoel and Teboulle, Marc},
+                          journal={Mathematical Programming},
+                          volume={145},
+                          number={1},
+                          pages={451--482},
+                          year={2014},
+                          publisher={Springer},
+                          url = {<a href="https://arxiv.org/pdf/1206.3209.pdf">https://arxiv.org/pdf/1206.3209.pdf</a>}
+                        }
+                    </code>
+                </pre>
+
+                </div></div></div></div>
+
+            </td>
+
+        </tr>
+
+
+
+        <tr>
+            <td class="title-special">
+                Smooth Strongly Convex Interpolation and Exact Worst-case Performance of First-order Methods.
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>
+                    We show that the exact worst-case performance of fixed-step first-order methods
+                    for unconstrained optimization of smooth (possibly strongly) convex functions can be obtained
+                    by solving convex programs.
+                    Finding the worst-case performance of a black-box first-order method is formulated
+                    as an optimization problem over a set of smooth (strongly) convex functions and initial conditions.
+                    We develop closed-form necessary and sufficient conditions for smooth (strongly) convex interpolation,
+                    which provide a finite representation for those functions. This allows us to reformulate
+                    the worst-case performance estimation problem as an equivalent finite dimension-independent semidefinite optimization problem,
+                    whose exact solution can be recovered up to numerical precision. Optimal solutions to this
+                    performance estimation problem provide both worst-case performance bounds and explicit functions matching them,
+                    as our smooth (strongly) convex interpolation procedure is constructive.
+                    Our works build on those of Drori and Teboulle in [Math. Prog. 145 (1-2), 2014] who introduced and solved relaxations of the performance estimation problem for smooth convex functions.
+                    We apply our approach to different fixed-step first-order methods with several performance criteria,
+                    including objective function accuracy and gradient norm. We conjecture several numerically supported
+                    worst-case bounds on the performance of the fixed-step gradient, fast gradient and optimized gradient methods,
+                    both in the smooth convex and the smooth strongly convex cases, and deduce tight estimates of the optimal step size
+                    for the gradient method.
+                </p>
+
+                <div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle" tabindex="0"><i style="font-size: 14px;">Show bibtex entry</i></label><div class="collapsible-content"><div class="content-inner"><div class="proof" id="proof-Chebyshev">
+
+                <pre>
+                    <code>
+                        @article{drori2014performance,
+                          title={Performance of first-order methods for smooth convex minimization: a novel approach},
+                          author={Drori, Yoel and Teboulle, Marc},
+                          journal={Mathematical Programming},
+                          volume={145},
+                          number={1},
+                          pages={451--482},
+                          year={2014},
+                          publisher={Springer},
+                          url = {<a href="https://arxiv.org/pdf/1206.3209">https://arxiv.org/pdf/1206.3209</a>}
+                        }
+                    </code>
+                </pre>
+
+                </div></div></div></div>
+
+            </td>
+
+        </tr>
+
+
+
+        <tr>
+            <td class="title-special">
+                Exact worst-case performance of first-order methods for composite convex optimization.
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>
+                    We provide a framework for computing the exact worst-case performance of any algorithm belonging
+                    to a broad class of oracle-based first-order methods for composite convex optimization,
+                    including those performing explicit, projected, proximal, conditional, and inexact (sub)gradient steps.
+                    We simultaneously obtain tight worst-case guarantees and explicit instances of optimization problems on which
+                    the algorithm reaches this worst-case. We achieve this by reducing the computation of the worst-case to solving
+                    a convex semidefinite program, generalizing previous works on performance estimation by Drori and Teboulle [14]
+                    and the authors [44].
+                    We use these developments to obtain a tighter analysis of the proximal point algorithm and of several variants
+                    of fast proximal gradient, conditional gradient, subgradient, and alternating projection methods.
+                    In particular, we present a new analytical worst-case guarantee for the proximal point algorithm that is twice better
+                    than previously known and improve the standard worst-case guarantee for the conditional gradient method by more than a factor of two.
+                    We also show how the optimized gradient method proposed by Kim and Fessler [23] can be extended by incorporating a projection or a proximal operator,
+                    which leads to an algorithm that converges in the worst-case twice as fast as the standard accelerated proximal gradient method [2].
+                </p>
+
+                <div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle" tabindex="0"><i style="font-size: 14px;">Show bibtex entry</i></label><div class="collapsible-content"><div class="content-inner"><div class="proof" id="proof-Chebyshev">
+
+                <pre>
+                    <code>
+                        @article{taylor2017exact,
+                          title={Exact worst-case performance of first-order methods for composite convex optimization},
+                          author={Taylor, Adrien B and Hendrickx, Julien M and Glineur, Fran{\c{c}}ois},
+                          journal={SIAM Journal on Optimization},
+                          volume={27},
+                          number={3},
+                          pages={1283--1313},
+                          year={2017},
+                          publisher={SIAM},
+                          url = {<a href="https://arxiv.org/pdf/1512.07516.pdf">https://arxiv.org/pdf/1512.07516.pdf</a>}
+                        }
+                    </code>
+                </pre>
+
+                </div></div></div></div>
+
+            </td>
+
+        </tr>
+
+
+
+
+        <tr>
+            <td class="title-special">
+                Efficient first-order methods for convex minimization: a constructive approach.
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>
+                    We describe a novel constructive technique for devising efficient first-order methods for a wide range of large-scale convex minimization settings,
+                    including smooth, non-smooth, and strongly convex minimization. The technique builds upon a certain variant of the conjugate gradient method
+                    to construct a family of methods such that a) all methods in the family share the same worst-case guarantee as the base conjugate gradient method,
+                    and b) the family includes a fixed-step first-order method. We demonstrate the effectiveness of the approach by deriving optimal methods for the smooth and non-smooth cases,
+                    including new methods that forego knowledge of the problem parameters at the cost of a one-dimensional line search per iteration, and a universal method for the union of these classes that requires a three-dimensional search per iteration.
+                    In the strongly convex case, we show how numerical tools can be used to perform the con- struction, and show that the resulting method offers an improved worst-case bound compared to Nesterov’s celebrated fast gradient method.
+                </p>
+
+                <div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle" tabindex="0"><i style="font-size: 14px;">Show bibtex entry</i></label><div class="collapsible-content"><div class="content-inner"><div class="proof" id="proof-Chebyshev">
+
+                <pre>
+                    <code>
+                        @article{drori2020efficient,
+                          title={Efficient first-order methods for convex minimization: a constructive approach},
+                          author={Drori, Yoel and Taylor, Adrien B},
+                          journal={Mathematical Programming},
+                          volume={184},
+                          number={1},
+                          pages={183--220},
+                          year={2020},
+                          publisher={Springer},
+                          url = {<a href="https://arxiv.org/pdf/1803.05676.pdf">https://arxiv.org/pdf/1803.05676.pdf</a>}
+                        }
+                    </code>
+                </pre>
+
+                </div></div></div></div>
+
+            </td>
+
+        </tr>
+
+
+
+
+        <tr>
+            <td class="title-special">
+                An optimal gradient method for smooth strongly convex minimization.
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>
+                    We present an optimal gradient method for smooth strongly convex optimization.
+                    The method is optimal in the sense that its worst-case bound on the distance to an optimal point exactly matches the lower bound on the oracle complexity for the class of problems,
+                    meaning that no black-box first-order method can have a better worst-case guarantee without further assumptions on the class of problems at hand.
+                    In addition, we provide a constructive recipe for obtaining the algorithmic parameters of the method and illustrate that it can be used for deriving methods for other optimality criteria as well.
+                </p>
+
+                <div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle" tabindex="0"><i style="font-size: 14px;">Show bibtex entry</i></label><div class="collapsible-content"><div class="content-inner"><div class="proof" id="proof-Chebyshev">
+
+                <pre>
+                    <code>
+                        @article{taylor2022optimal,
+                          title={An optimal gradient method for smooth strongly convex minimization},
+                          author={Taylor, Adrien and Drori, Yoel},
+                          journal={Mathematical Programming},
+                          pages={1--38},
+                          year={2022},
+                          publisher={Springer},
+                          url = {<a href="https://arxiv.org/pdf/2101.09741.pdf">https://arxiv.org/pdf/2101.09741.pdf</a>}
+                        }
+                    </code>
+                </pre>
+
+                </div></div></div></div>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+<footer>
+</footer>
+
+</body>
+</html>
