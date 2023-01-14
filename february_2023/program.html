@@ -4,6 +4,9 @@
 <head>
     <base href=".">
     <link rel="stylesheet" type="text/css" media="all" href="main2023.css"/>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
+    </script>
     <meta name="description" content="Conference">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
@@ -33,7 +36,7 @@
                 <a title="Register" href="registration.html">Registration</a>
             </td>
             <td class="navigation">
-                <a class="current" title="Program" href="program.html">Program</a>
+                <a class="current" title="Seminar Program" href="program.html">Program</a>
             </td>
             <td class="navigation">
                 <a title="Venue" href="venue.html">Venue</a>
@@ -44,19 +47,538 @@
         </tr>
     </table>
 
-    <h2>Workshop Program</h2>
+    <h2>Seminar Program</h2>
 
     <p>
-      The workshop will take place from Monday February the 13th 11:45 a.m. to Tuesday February the 14th  4 p.m.
+      The Seminar will take place on Monday February the 13th (from 11:30 a.m.) and Tuesday February the 14th (to 3 p.m.).
     </p>
-    <p>
-      The program will be divided into short talks (25 minutes, questions included), and long talks (1h, questions included).
-      Presentations will be recorded and streamed online.
-      The full program will be released in January.
-    </p>
+
+<h2>Monday the 13th</h2>
+
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                11:30am
+            </td>
+            <td class="title-special">
+                Welcome &amp; practical information!
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+            </td>
+        </tr>
+    </table>
+
+    <table id="Adrien Taylor">
+        <tr>
+            <td class="date" rowspan="3">
+                11:45am
+            </td>
+            <td class="title">
+                Opening talk
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Adrien Taylor (Inria Paris)
+                <details>
+                <summary>Biography</summary>
+                </details>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                My personal view on computer-assisted analyses and design of optimization methods via performance
+                estimation problems
+                <details>
+                <summary>Abstract</summary>
+                In this presentation, I want to provide an overview of the performance estimation approach for
+                analyzing and designing optimization methods. I will focus on what I believe are the key ingredients,
+                strengths, and weaknesses of the methodology. I will also discuss a few aspects and links that I believe
+                were a bit overlooked in the last years, as well as the use of performance estimation beyond
+                its comfort zone.
+                </details>
+            </td>
+        </tr>
+    </table>
+
+    <table id="lunch">
+        <tr>
+            <td class="date" rowspan="3">
+                12:45am
+            </td>
+            <td class="title">
+                Lunch
+            </td>
+        </tr>
+    </table>
+
+    <table id="Talks Session 1">
+        <tr>
+            <td class="date" rowspan="3">
+                2:00pm
+            </td>
+            <td class="title">
+                Talks Session 1
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <details>
+                <summary><i>Anne Rubens (UCLouvain)</i>: A novel approach for interpolation </summary>
+                In this talk, we present a novel approach for the interpolation problem of given function classes: what
+                    necessary and sufficient conditions must a set of data satisfy to ensure the existence of a function
+                    of the class defined on the whole space and interpolating the data? The derivation of such conditions
+                    is crucial in the PEP framework , since a priori tight performance guarantees can only be obtained
+                    for function classes whose interpolation conditions are known.
+                    <br>
+                    <br>
+                    Our method to analyze conditions and
+                    hence extend the field of applications of the framework is the following:  given a constraint
+                    satisfied by a finite set of data, we require it to be extensible to any arbitrary new point,
+                    instead of interpolable by a function defined on the whole space. This approach to the interpolation
+                    problem allows one to get rid of all analytic properties of the function class to work only at an
+                    algebraic level. As a side product, it allows to easily obtain counterexamples when a condition
+                    characterizing a function class is not interpolable. As an illustration, we provide interpolation
+                    conditions for weakly convex functions whose quasi-subgradient is bounded, and weakly convex functions
+                    satisfying a sharpness condition.
+                </details>
+
+                <details>
+                <summary><i>Sebastian Banert (Lund University)</i>: Deriving algorithms with deviations</summary>
+                    This talk will present a methodology to derive algorithms for convex optimisation and monotone inclusions.
+                    It is based on performance estimation of one step of a Lyapunov function with symbolic calculations.
+                    The resulting algorithms allow for a trade-off between flexibility and guaranteed performance, where
+                    the former is expressed by the possibility to choose the iteration within a ball of a radius that
+                    is given by quantities that have already been computed. We call this concept "deviations", and allows
+                    for heuristic modifications of existing algorithms (e.g., by means of deep learning) while retaining
+                    convergence or performance guarantees.
+                </details>
+
+                <details>
+                <summary><i>S&eacute;bastien Colla (UCLouvain)</i>: Automatic Performance Estimation for Decentralized Optimization </summary>
+                    We present a methodology to automatically compute worst-case performance bounds for a large class of
+                    first-order decentralized optimization algorithms. These algorithms aim at minimizing the average
+                    of local functions that are distributed across a network of agents. They typically combine local
+                    computations and consensus steps. Our methodology is based on the approach of Performance Estimation
+                    Problem (PEP), which allows computing the worst-case performance and a worst-case instance of
+                    first-order optimization algorithms by solving an SDP. We propose two ways of representing consensus
+                    steps in PEPs, which allow writing and solving PEPs for decentralized optimization. The first
+                    formulation is exact but specific to a given averaging matrix. The second formulation is a relaxation
+                    but provides guarantees valid over an entire class of averaging matrices, characterized by their
+                    spectral range. This formulation often allows recovering a posteriori the worst possible averaging
+                    matrix for the given algorithm. We apply our methodology to three different decentralized methods.
+                    For each of them, we obtain numerically tight worst-case performance bounds that significantly
+                    improve on the existing ones, as well as insights about the parameters tuning and the worst
+                    communication networks.
+                </details>
+            </td>
+
+    </table>
+
+    <table id="break 1">
+        <tr>
+            <td class="date" rowspan="3">
+                3:15pm
+            </td>
+            <td class="title">
+                Break
+            </td>
+        </tr>
+    </table>
+
+    <table id="Talks Session 2">
+        <tr>
+            <td class="date" rowspan="3">
+                3:30pm
+            </td>
+            <td class="title">
+                Talks Session 2
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <details>
+                <summary><i>Nizar Bousselmi (KULeuven)</i>: Performance Estimation of First-Order Methods on Functions composed
+                    with Linear Mappings </summary>
+                    We develop a Performance Estimation Problem representation for linear mappings. We consider convex
+                    optimization problems involving linear mappings, such as those whose objective functions include
+                    compositions of the type g(Mx), or featuring linear constraints of the form Mx=b. First-order methods
+                    designed to tackle these problems will typically exploit their specific structure and will need to
+                    compute at each iteration products of iterates by matrices M or M^T.
+                    <br>
+                    <br>
+                    Our goal is to identify the worst-case behavior of such first-order methods, based on the Performance
+                    Estimation Problem (PEP) methodology. We develop interpolation conditions for linear operators M and
+                    M^T. It allows us to embed them in the PEP framework, and thus, to evaluate the worst-case performance
+                    of a wide variety of problems involving linear mappings. We cover both the symmetric and nonsymmetric
+                    cases and allow bounds on the spectrum of these operators (lower and upper bounds on the eigenvalues
+                    in the symmetric case, maximum singular value in the nonsymmetric case). As a byproduct we also
+                    obtain interpolation conditions and worst-case performance for the class of convex quadratic functions.
+                    <br>
+                    <br>
+                    We demonstrate the scope of our tool by computing several tight worst-case convergence rates,
+                    including that of the gradient method applied to the minimization of g(Mx) and that of the
+                    Chambolle-Pock algorithm.
+                </details>
+
+                <details>
+                <summary><i>C&eacute;line Moucer (Inria Paris)</i>: A systematic approach to Lyapunov analyses of continuous-time
+                    models in convex optimization </summary>
+                    First-order methods are often analyzed via their continuous-time models, where their worst-case convergence
+                    properties are usually approached via Lyapunov functions. In this work, we provide a systematic and
+                    principled approach to find and verify Lyapunov functions for classes of ordinary and stochastic
+                    differential equations. More precisely, we extend the performance estimation framework, originally
+                    proposed by Drori and Teboulle (2012), to continuous-time models. We retrieve convergence results
+                    comparable to those of discrete methods using fewer assumptions and convexity inequalities, and provide
+                    new results for stochastic accelerated gradient flows.
+                </details>
+
+                <details>
+                <summary><i>Manu Upadhyaya (Lund University)</i>: Tight Lyapunov function existence analysis for first-order
+                    methods </summary>
+                    We present a unifying framework for establishing linear convergence rates for first-order methods used
+                    to solve convex optimization problems. To accomplish this, we derive a necessary and sufficient
+                    condition for verifying the existence of a quadratic Lyapunov function for the algorithm and problem
+                    class under consideration. This allows us to produce tight convergence certificates for the setting
+                    at hand (i.e., producing worst-case certificates and matching worst-case examples).
+                    <br>
+                    <br>
+                    This is joint work with Sebastian Banert, Adrien Taylor and Pontus Giselsson."
+                </details>
+            </td>
+        </tr>
+    </table>
+
+    <table id="break 2">
+        <tr>
+            <td class="date" rowspan="3">
+                4:45pm
+            </td>
+            <td class="title">
+                Break
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="Etienne de Klerk">
+        <tr>
+            <td class="date" rowspan="3">
+                5:00pm
+            </td>
+            <td class="title">
+                Long Talk
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Etienne de Klerk (Tilburg University)
+                <details>
+                <summary>Biography </summary>
+                Etienne de Klerk completed his BSc and MSc degrees at the University of Pretoria in South Africa, and
+                    obtained his PhD degree from the Delft University of Technology in The Netherlands in 1997. From
+                    January 1998 to September 2003, he held assistant professorships at the Delft University of Technology,
+                    and from September 2003 to September 2005 an associate professorship at the University of Waterloo,
+                    Canada, in the Department of Combinatorics & Optimization. In September 2004 he was appointed at
+                    Tilburg University, The Netherlands, first as an associate professor, and then as full professor
+                    (from June 2009). From August 29th, 2012, until August 31st, 2013, he was also appointed as full
+                    professor in the Division of Mathematics of the School of Physical and Mathematical Sciences at
+                    the Nanyang Technological University in Singapore. From September 1st, 2015 to August 31st 2019,
+                    he also held a full professorship at the Delft University of Technology (1 day/week position).
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Some recent advances in SDP performance analysis
+                <details>
+                <summary>Abstract </summary>
+                    Semidefinite programming (SDP) performance analysis was introduced in 2014 in a seminal paper by
+                Teboulle and Drori. Since then it has become a standard tool in establishing the (often exact) rates
+                of convergence of many iterative methods, by formulating the worst case convergence rate as the optimal
+                value of an SDP problem. This has yielded new insight on many methods, including gradient descent,
+                Newton’s method for self-concordant functions, ADMM, DCA, etc. In this talk we will review some recent
+                results on SDP performance analysis for iterative methods. The talk will be based on joint work with
+                Hadi Abbaszadehpeivasti and Moslem Zamani.
+                </details>
+
+            </td>
+        </tr>
+    </table>
+
+    <table id="end of the day">
+        <tr>
+            <td class="date" rowspan="3">
+                6:00pm
+            </td>
+            <td class="title">
+                End of the day
+            </td>
+        </tr>
+    </table>
+
+    <table id="Dining">
+        <tr>
+            <td class="date" rowspan="3">
+                7:00pm
+            </td>
+            <td class="title">
+                Dining
+            </td>
+        </tr>
+    </table>
+
+<h2>Tuesday the 14th</h2>
+
+    <table id="Talks Sessions 3">
+        <tr>
+            <td class="date" rowspan="3">
+                9:00am
+            </td>
+            <td class="title">
+                Talks Sessions 3
+            </td>
+        </tr>
+        <tr>
+        <td class="abstract">
+                <details>
+                <summary><i>Radu Dragomir (EPFL)</i>: Computer-aided analysis of Bregman methods </summary>
+                In this talk, I will present applications of the performance estimation framework to the analysis of
+                    Bregman/mirror descent methods in the context of relatively-smooth optimization. For generic Bregman
+                    functions, the performance estimation problem is a linear program. Solving it allows to infer a
+                    lower bound stating that the standard mirror descent method is optimal. Then, I will discuss attempts
+                    for refining the analysis to the specific case of entropic mirror descent.
+                </details>
+
+                <details>
+                <summary><i>Teodor Rotaru (UCLouvain &amp; KULeuven)</i>: Tight convergence rates of the gradient method applied
+                    on smooth hypoconvex functions</summary>
+                In this talk we present the first tight convergence analysis of the gradient method applied to smooth
+                    hypoconvex (weakly convex) functions. Hypoconvex functions are smooth nonconvex functions whose
+                    curvature is bounded and assumed to belong to the interval \([\mu, L]\), with \(\mu< 0\). Our convergence
+                    rates improve and extend the existing analysis for smooth nonconvex functions with \(L\)-Lipschitz
+                    gradient (which corresponds to the case \(\mu=\) −\(L\)), and smoothly interpolate between that class and
+                    the class of smooth convex functions. We obtain our results using the performance estimation framework
+                    adapted to hypoconvex functions, for which new interpolation conditions are determined.
+                    <br>
+                    We show explicit upper bounds on the minimum gradient norm of the iterates for the entire range of
+                    step sizes \((0, 2/L)\), prove that these rates are tight when step sizes are shorter or equal to some
+                    threshold larger than \(1.5/L\) and conjecture their tightness above the threshold. Convergence rates
+                    in the convex case are a particular case of our analysis. Finally, we identify the optimal constant
+                    step size that minimizes the worst-case of the gradient method applied to hypoconvex functions.
+
+                    </details>
+
+                <details>
+                <summary><i>Yassine Kamri (UCLouvain)</i>: On the worst-case analysis of block coordinate-wise algorithms </summary>
+                Block coordinate-wise algorithms are an essential class of first-order optimization methods widely used
+                    to solve large-scale optimization problems. However, their worst-case performance is still not well
+                    understood and their practical success has not yet been explained by existing convergence analyses.
+                    We analyze the worst-case behavior of cyclic versions of Block coordinate-wise algorithms in the
+                    context of unconstrained optimization of convex functions with coordinate-wise Lipschitz gradients.
+                    For this purpose, we rely on the recently proposed Performance Estimation Problem (PEP) and develop a
+                    new characterization for this class of function, from which we obtain necessary interpolation conditions.
+                    <br>
+                    <br>
+                    In this paper, we present a unifying framework for the worst-case analysis of Block coordinate-wise
+                    algorithms, and in some situations, we are able to substantially outperform the best current bounds.
+                </details>
+            </td>
+         </tr>
+    </table>
+
+  <table id="break 3">
+        <tr>
+            <td class="date" rowspan="3">
+                10:15am
+            </td>
+            <td class="title">
+                Break
+            </td>
+        </tr>
+    </table>
+
+    <table id="Shuvo">
+        <tr>
+            <td class="date" rowspan="3">
+                11:45am
+            </td>
+            <td class="title">
+                Long Talk
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Shuvomoy Das Gupta (MIT)
+                <details>
+                <summary>Biography</summary>
+                Shuvomoy Das Gupta is a fourth-year Ph.D. student at the MIT Operations Research Center. His research
+                    focuses on developing efficient algorithms for large-scale optimization and machine learning.
+                    He obtained his M.A.Sc. from the ECE Department at the University of Toronto in 2016 and then
+                    worked as a researcher at the Research & Technology Department of Thales Canada for three years.
+                    His M.A.Sc. research on energy-efficient railway timetables has been applied to the largest installed
+                    base of communication-based train control systems worldwide. Previously, he obtained a Bachelor of
+                    Science in Electrical and Electronic Engineering from the Bangladesh University of Engineering and
+                    Technology.
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Branch-and-Bound Performance Estimation Programming: A Unified Methodology for Constructing
+                Optimal Optimization Methods
+                <details>
+                <summary>Abstract</summary>
+                We present the Branch-and-Bound Performance Estimation Programming (BnB-PEP), a unified
+                methodology for constructing optimal first-order methods for convex and nonconvex optimization.
+                BnB-PEP poses the problem of finding the optimal optimization method as a nonconvex but practically
+                tractable quadratically constrained quadratic optimization problem and solves it to certifiable
+                global optimality using a customized branch-and-bound algorithm. By directly confronting the nonconvexity,
+                BnB-PEP offers significantly more flexibility and removes the many limitations of the prior
+                methodologies. Our customized branch-and-bound algorithm, through exploiting specific problem
+                structures, outperforms the latest off-the-shelf implementations by orders of magnitude, accelerating
+                the solution time from hours to seconds and weeks to minutes. We apply BnB-PEP to several setups for
+                which the prior methodologies do not apply and obtain methods with bounds that improve upon prior
+                state-of-the-art results. Finally, we use the BnB-PEP methodology to find proofs with potential
+                function structures, thereby systematically generating analytical convergence proofs.
+                </details>
+            </td>
+        </tr>
+    </table>
+
+  <table id="break 4">
+        <tr>
+            <td class="date" rowspan="3">
+                11:30am
+            </td>
+            <td class="title">
+                Break
+            </td>
+        </tr>
+    </table>
+
+  <table id="Talks Sessions 4">
+        <tr>
+            <td class="date" rowspan="3">
+                11:45am
+            </td>
+            <td class="title">
+                Talks Sessions 4
+            </td>
+        </tr>
+      <td class="abstract">
+                <details>
+                <summary><i>Hadi Abbaszadehpeivasti (Tilburg University)</i>: Convergence rate analysis of the gradient
+                    descent-ascent method for convex-concave saddle-point problems </summary>
+                In this talk, I present our study on the gradient descent-ascent method for convex-concave saddle-point
+                    problems. We derive a new non-asymptotic global convergence rate in terms of distance to the solution
+                    set by using the semidefinite programming performance estimation method. The given convergence rate
+                    incorporates most parameters of the problem, and it is exact for a large class of strongly convex-strongly
+                    concave saddle-point problems for one iteration.  We also investigate the algorithm without strong
+                    convexity, and we provide some necessary and sufficient conditions under which the gradient
+                    descent-ascent enjoys linear convergence.
+                </details>
+
+                <details>
+                <summary><i>Eduard Gorbunov (Mohamed bin Zayed University of Artificial Intelligence)</i>: Convergence of
+                    Proximal Point and Extragradient-Based Methods Beyond Monotonicity: the Case of Negative Comonotonicity</summary>
+                    Algorithms for min-max optimization and variational inequalities are often studied under monotonicity
+                    assumptions. Motivated by non-monotone machine learning applications, we follow the line of works
+                    [Diakonikolas et al., 2021, Lee and Kim, 2021, Pethick et al., 2022, Böhm, 2022] aiming at going
+                    beyond monotonicity by considering the weaker negative comonotonicity assumption. In particular,
+                    we provide tight complexity analyses for the Proximal Point, Extragradient, and Optimistic Gradient
+                    methods in this setup, closing some questions on their working guarantees beyond monotonicity.
+
+                </details>
+
+                <details>
+                <summary><i>Moslem Zamani (Tilburg University)</i>:  The exact worst-case convergence rate of the alternating
+                    direction method of multipliers</summary>
+                In this talk, we derive new non-ergodic convergence rates for the alternating direction method of
+                    multipliers (ADMM) by using performance estimation. We give some examples which show the exactness
+                    of the given bounds. Moreover, we study the linear (R-linear) convergence of ADMM under some
+                    scenarios which are weaker than the existing ones in the literature.
+                </details>
+            </td>
+         </tr>
+    </table>
+
+    <table id="lunch 2">
+        <tr>
+            <td class="date" rowspan="3">
+                12:45am
+            </td>
+            <td class="title">
+                Lunch
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="Pontus Gisselson">
+        <tr>
+            <td class="date" rowspan="3">
+                2:00am
+            </td>
+            <td class="title">
+                Long Talk : <a href="https://uclouvain.be/en/research-institutes/icteam/inma/seminars.html" target="_blank">INMA Seminar</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Pontus Gisselson (Tilburg University)
+                <details>
+                <summary>Biography</summary>
+                Pontus Giselsson is an Associate Professor at the Department of Automatic Control at Lund University,
+                Sweden. His current research interests include mathematical optimization and its applications in, e.g.,
+                control, machine learning, statistical estimation, and signal processing. He received an M.Sc. degree from
+                Lund University in 2006 and a Ph.D. degree from Lund University in 2012.
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Tight Lyapunov function existence analysis for
+                first-order methods
+                <details>
+                <summary>Abstract</summary>
+                We present a unifying framework for establishing linear convergence rates for common
+                first-order methods used to solve convex optimization problems. In particular, we consider i) classes
+                of convex optimization problems of finite sum form with (possibly strongly) convex and (possibly)
+                smooth functional components, and ii) first-order methods that can be written in so-called state-space
+                form, i.e., as a linear system in feedback interconnection with the subdifferentials of the functional
+                components of the objective function. The validity of a given target linear convergence rate is
+                established by deriving a necessary and sufficient condition for verifying the existence of a quadratic
+                Lyapunov function for the algorithm and problem class under consideration for the chosen rate, which
+                amounts to the feasibility of a small-sized semidefinite program. This allows us to find the smallest
+                linear convergence rate for which such a quadratic Lyapunov function exists, by bisection search,
+                yielding a tight procedure. The approach is numerically exemplified on several algorithmic schemes.
+                </details>
+
+            </td>
+        </tr>
+    </table>
+
+    <table id="end of the workshop">
+        <tr>
+            <td class="date" rowspan="3">
+                3:00pm
+            </td>
+            <td class="title">
+                End of PEP talks!
+            </td>
+        </tr>
+    </table>
+
 
     <footer>
+        &copy; Conference Organizers
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
+
 
 </body>
 </html>
