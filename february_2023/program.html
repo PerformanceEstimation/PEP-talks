@@ -83,6 +83,7 @@
             <td class="speaker">
                 <details>
                 <summary>Biography</summary>
+                    Full biography to come
                 </details>
             </td>
         </tr>
@@ -197,54 +198,38 @@
         <tr>
             <td class="abstract">
                 <details>
-                <summary><i>Nizar Bousselmi (UCLouvain)</i> - <strong>Performance Estimation of First-Order Methods on Functions composed
-                    with Linear Mappings  </strong> </summary>
-                    We develop a Performance Estimation Problem representation for linear mappings. We consider convex
-                    optimization problems involving linear mappings, such as those whose objective functions include
-                    compositions of the type \(g(Mx)\), or featuring linear constraints of the form \(Mx=b\). First-order methods
-                    designed to tackle these problems will typically exploit their specific structure and will need to
-                    compute at each iteration products of iterates by matrices \(M\) or \(M^T\).
-                    <br>
-                    Our goal is to identify the worst-case behavior of such first-order methods, based on the Performance
-                    Estimation Problem (PEP) methodology. We develop interpolation conditions for linear operators M and
-                    \(M^T\). It allows us to embed them in the PEP framework, and thus, to evaluate the worst-case performance
-                    of a wide variety of problems involving linear mappings. We cover both the symmetric and nonsymmetric
-                    cases and allow bounds on the spectrum of these operators (lower and upper bounds on the eigenvalues
-                    in the symmetric case, maximum singular value in the nonsymmetric case). As a byproduct we also
-                    obtain interpolation conditions and worst-case performance for the class of convex quadratic functions.
-                    <br>
-                    We demonstrate the scope of our tool by computing several tight worst-case convergence rates,
-                    including that of the gradient method applied to the minimization of \(g(Mx)\) and that of the
-                    Chambolle-Pock algorithm.
+                <summary><i>Hadi Abbaszadehpeivasti (Tilburg University)</i> - <strong>Convergence rate analysis of the gradient
+                    descent-ascent method for convex-concave saddle-point problems  </strong> </summary>
+                In this talk, I present our study on the gradient descent-ascent method for convex-concave saddle-point
+                    problems. We derive a new non-asymptotic global convergence rate in terms of distance to the solution
+                    set by using the semidefinite programming performance estimation method. The given convergence rate
+                    incorporates most parameters of the problem, and it is exact for a large class of strongly convex-strongly
+                    concave saddle-point problems for one iteration.  We also investigate the algorithm without strong
+                    convexity, and we provide some necessary and sufficient conditions under which the gradient
+                    descent-ascent enjoys linear convergence.
                 </details>
                 <br>
                 <details>
-                <summary><i>C&eacute;line Moucer (Inria Paris)</i> - <strong>A systematic approach to Lyapunov analyses of continuous-time
-                    models in convex optimization  </strong> </summary>
-                    First-order methods are often analyzed via their continuous-time models, where their worst-case convergence
-                    properties are usually approached via Lyapunov functions. In this work, we provide a systematic and
-                    principled approach to find and verify Lyapunov functions for classes of ordinary and stochastic
-                    differential equations. More precisely, we extend the performance estimation framework, originally
-                    proposed by Drori and Teboulle (2012), to continuous-time models. We retrieve convergence results
-                    comparable to those of discrete methods using fewer assumptions and convexity inequalities, and provide
-                    new results for stochastic accelerated gradient flows. <br> <br>
+                <summary><i>Eduard Gorbunov (Mohamed bin Zayed University of Artificial Intelligence)</i> - <strong>Convergence of
+                    Proximal Point and Extragradient-Based Methods Beyond Monotonicity: the Case of Negative Comonotonicity  </strong> </summary>
+                    Algorithms for min-max optimization and variational inequalities are often studied under monotonicity
+                    assumptions. Motivated by non-monotone machine learning applications, we follow the line of works
+                    [Diakonikolas et al., 2021, Lee and Kim, 2021, Pethick et al., 2022, B&ouml;hm, 2022] aiming at going
+                    beyond monotonicity by considering the weaker negative comonotonicity assumption. In particular,
+                    we provide tight complexity analyses for the Proximal Point, Extragradient, and Optimistic Gradient
+                    methods in this setup, closing some questions on their working guarantees beyond monotonicity.
                 </details>
                 <br>
                 <details>
-                <summary><i>Yassine Kamri (UCLouvain)</i> - <strong>On the worst-case analysis of block coordinate-wise algorithms  </strong> </summary>
-                Block coordinate-wise algorithms are an essential class of first-order optimization methods widely used
-                    to solve large-scale optimization problems. However, their worst-case performance is still not well
-                    understood and their practical success has not yet been explained by existing convergence analyses.
-                    We analyze the worst-case behavior of cyclic versions of Block coordinate-wise algorithms in the
-                    context of unconstrained optimization of convex functions with coordinate-wise Lipschitz gradients.
-                    For this purpose, we rely on the recently proposed Performance Estimation Problem (PEP) and develop a
-                    new characterization for this class of function, from which we obtain necessary interpolation conditions.
-                    <br>
-                    In this paper, we present a unifying framework for the worst-case analysis of Block coordinate-wise
-                    algorithms, and in some situations, we are able to substantially outperform the best current bounds. <br>
-                    Preprint:  <a href="https://arxiv.org/pdf/2211.17018.pdf " target="_blank"> https://arxiv.org/pdf/2211.17018.pdf </a>
+                <summary><i>Moslem Zamani (Tilburg University)</i> - <strong>The exact worst-case convergence rate of the alternating
+                    direction method of multipliers  </strong> </summary>
+                In this talk, we derive new non-ergodic convergence rates for the alternating direction method of
+                    multipliers (ADMM) by using performance estimation. We give some examples which show the exactness
+                    of the given bounds. Moreover, we study the linear (R-linear) convergence of ADMM under some
+                    scenarios which are weaker than the existing ones in the literature.
                 </details>
             </td>
+
         </tr>
     </table>
 
@@ -336,37 +321,54 @@
                 Talks Session 3
             </td>
         </tr>
-      <td class="abstract">
+       <td class="abstract">
                 <details>
-                <summary><i>Hadi Abbaszadehpeivasti (Tilburg University)</i> - <strong>Convergence rate analysis of the gradient
-                    descent-ascent method for convex-concave saddle-point problems  </strong> </summary>
-                In this talk, I present our study on the gradient descent-ascent method for convex-concave saddle-point
-                    problems. We derive a new non-asymptotic global convergence rate in terms of distance to the solution
-                    set by using the semidefinite programming performance estimation method. The given convergence rate
-                    incorporates most parameters of the problem, and it is exact for a large class of strongly convex-strongly
-                    concave saddle-point problems for one iteration.  We also investigate the algorithm without strong
-                    convexity, and we provide some necessary and sufficient conditions under which the gradient
-                    descent-ascent enjoys linear convergence.
+                <summary><i>Nizar Bousselmi (UCLouvain)</i> - <strong>Performance Estimation of First-Order Methods on Functions composed
+                    with Linear Mappings  </strong> </summary>
+                    We develop a Performance Estimation Problem representation for linear mappings. We consider convex
+                    optimization problems involving linear mappings, such as those whose objective functions include
+                    compositions of the type \(g(Mx)\), or featuring linear constraints of the form \(Mx=b\). First-order methods
+                    designed to tackle these problems will typically exploit their specific structure and will need to
+                    compute at each iteration products of iterates by matrices \(M\) or \(M^T\).
+                    <br>
+                    Our goal is to identify the worst-case behavior of such first-order methods, based on the Performance
+                    Estimation Problem (PEP) methodology. We develop interpolation conditions for linear operators M and
+                    \(M^T\). It allows us to embed them in the PEP framework, and thus, to evaluate the worst-case performance
+                    of a wide variety of problems involving linear mappings. We cover both the symmetric and nonsymmetric
+                    cases and allow bounds on the spectrum of these operators (lower and upper bounds on the eigenvalues
+                    in the symmetric case, maximum singular value in the nonsymmetric case). As a byproduct we also
+                    obtain interpolation conditions and worst-case performance for the class of convex quadratic functions.
+                    <br>
+                    We demonstrate the scope of our tool by computing several tight worst-case convergence rates,
+                    including that of the gradient method applied to the minimization of \(g(Mx)\) and that of the
+                    Chambolle-Pock algorithm.
                 </details>
                 <br>
                 <details>
-                <summary><i>Eduard Gorbunov (Mohamed bin Zayed University of Artificial Intelligence)</i> - <strong>Convergence of
-                    Proximal Point and Extragradient-Based Methods Beyond Monotonicity: the Case of Negative Comonotonicity  </strong> </summary>
-                    Algorithms for min-max optimization and variational inequalities are often studied under monotonicity
-                    assumptions. Motivated by non-monotone machine learning applications, we follow the line of works
-                    [Diakonikolas et al., 2021, Lee and Kim, 2021, Pethick et al., 2022, B&ouml;hm, 2022] aiming at going
-                    beyond monotonicity by considering the weaker negative comonotonicity assumption. In particular,
-                    we provide tight complexity analyses for the Proximal Point, Extragradient, and Optimistic Gradient
-                    methods in this setup, closing some questions on their working guarantees beyond monotonicity.
+                <summary><i>C&eacute;line Moucer (Inria Paris)</i> - <strong>A systematic approach to Lyapunov analyses of continuous-time
+                    models in convex optimization  </strong> </summary>
+                    First-order methods are often analyzed via their continuous-time models, where their worst-case convergence
+                    properties are usually approached via Lyapunov functions. In this work, we provide a systematic and
+                    principled approach to find and verify Lyapunov functions for classes of ordinary and stochastic
+                    differential equations. More precisely, we extend the performance estimation framework, originally
+                    proposed by Drori and Teboulle (2012), to continuous-time models. We retrieve convergence results
+                    comparable to those of discrete methods using fewer assumptions and convexity inequalities, and provide
+                    new results for stochastic accelerated gradient flows. <br> <br>
                 </details>
                 <br>
                 <details>
-                <summary><i>Moslem Zamani (Tilburg University)</i> - <strong>The exact worst-case convergence rate of the alternating
-                    direction method of multipliers  </strong> </summary>
-                In this talk, we derive new non-ergodic convergence rates for the alternating direction method of
-                    multipliers (ADMM) by using performance estimation. We give some examples which show the exactness
-                    of the given bounds. Moreover, we study the linear (R-linear) convergence of ADMM under some
-                    scenarios which are weaker than the existing ones in the literature.
+                <summary><i>Yassine Kamri (UCLouvain)</i> - <strong>On the worst-case analysis of block coordinate-wise algorithms  </strong> </summary>
+                Block coordinate-wise algorithms are an essential class of first-order optimization methods widely used
+                    to solve large-scale optimization problems. However, their worst-case performance is still not well
+                    understood and their practical success has not yet been explained by existing convergence analyses.
+                    We analyze the worst-case behavior of cyclic versions of Block coordinate-wise algorithms in the
+                    context of unconstrained optimization of convex functions with coordinate-wise Lipschitz gradients.
+                    For this purpose, we rely on the recently proposed Performance Estimation Problem (PEP) and develop a
+                    new characterization for this class of function, from which we obtain necessary interpolation conditions.
+                    <br>
+                    In this paper, we present a unifying framework for the worst-case analysis of Block coordinate-wise
+                    algorithms, and in some situations, we are able to substantially outperform the best current bounds. <br>
+                    Preprint:  <a href="https://arxiv.org/pdf/2211.17018.pdf " target="_blank"> https://arxiv.org/pdf/2211.17018.pdf </a>
                 </details>
             </td>
          </tr>
@@ -518,7 +520,7 @@
         </tr>
         <tr>
             <td class="abstract">
-                This is a joint work with Manu Updhyaya, Sebastian Banert and Adrien Taylor.
+                This talk will be co-presented by Manu Updhyaya (Lund University).
                 <br>
                 <strong>Tight Lyapunov function existence analysis for first-order methods </strong>
                 <details>
