@@ -417,23 +417,19 @@
         </tr>
         <tr>
             <td class="abstract">
-                <strong>Branch-and-Bound Performance Estimation Programming: A Unified Methodology for Constructing
-                Optimal Optimization Methods  </strong>
+                <strong> Design and analysis of first-order methods via nonconvex QCQP frameworks  </strong>
                 <details>
                 <summary>Abstract</summary>
-                We present the Branch-and-Bound Performance Estimation Programming (BnB-PEP), a unified
-                methodology for constructing optimal first-order methods for convex and nonconvex optimization.
-                BnB-PEP poses the problem of finding the optimal optimization method as a nonconvex but practically
-                tractable quadratically constrained quadratic optimization problem and solves it to certifiable
-                global optimality using a customized branch-and-bound algorithm. By directly confronting the nonconvexity,
-                BnB-PEP offers significantly more flexibility and removes the many limitations of the prior
-                methodologies. Our customized branch-and-bound algorithm, through exploiting specific problem
-                structures, outperforms the latest off-the-shelf implementations by orders of magnitude, accelerating
-                the solution time from hours to seconds and weeks to minutes. We apply BnB-PEP to several setups for
-                which the prior methodologies do not apply and obtain methods with bounds that improve upon prior
-                state-of-the-art results. Finally, we use the BnB-PEP methodology to find proofs with potential
-                function structures, thereby systematically generating analytical convergence proofs.
-                </details>
+                In this presentation, we will provide an overview of recent approaches for analyzing and designing first-order methods using nonconvex QCQPs. In this computer-assisted approach, the key idea involves posing the analysis or design of first-order methods as nonconvex but practically tractable QCQPs and then solving them to global optimality using custom spatial branch-and-bound algorithms. In particular, we will illustrate how to use this nonconvex QCQP framework to (i) analyze adaptive first-order methods, and (ii) design efficient fixed-step first-order methods. <br>
+                First, we will discuss a nonconvex QCQP framework [1] to analyze the worst-case convergence of nonlinear conjugate gradient methods (NCGMs) for smooth strongly convex minimization. NCGMs are adaptive methods known for their good empirical performance but have incomplete analyses. By solving the associated nonconvex QCQPs to global optimality, we construct mathematical proofs that establish the first non-asymptotic convergence bound for Fletcher-Reeves NCGM (historically the first NCGM) and an improved non-asymptotic convergence bound for Polak-Ribi`ere-Polyak NCGM. Conversely, from the solutions of those QCQPs we construct “bad” functions on which these NCGMs perform worse than the regular steepest descent. <br>
+                Then, we will briefly discuss BnB-PEP [2], which is a framework for numerically constructing optimal fixed-step first-order methods for convex and nonconvex optimization. We will provide examples of numerically constructed optimal methods and analytical convergence proofs with potential function structures that are generated using BnB-PEP. <br><br>
+
+                References:
+                <br>
+                [1] Shuvomoy Das Gupta, Robert M. Freund, Xu Andy Sun, Adrien B. Taylor, “Nonlinear conjugate gradient methods: worst-case convergence rates via computer-assisted analyses”, 2023. <a href="https://arxiv.org/abs/2301.01530.pdf" target="_blank"> PDF</a>,  <a href="https://github.com/Shuvomoy/NCG-PEP-code" target="_blank"> Code</a> <br>
+                [2] Shuvomoy Das Gupta, Bart P.G. Van Parys, Ernest K. Ryu, “Branch-and-Bound Performance Estimation Programming: A Unified Methodology for Constructing Optimal Optimization Methods”, 2022. <a href="https://arxiv.org/pdf/2203.07305.pdf" target="_blank"> PDF</a>,  <a href="https://github.com/Shuvomoy/BnB-PEP-code" target="_blank"> Code</a> <br>
+
+              </details>
             </td>
         </tr>
     </table>
