@@ -159,23 +159,20 @@
                     convergence or performance guarantees. <br>
                 </details> <br>
                 <details>
-                <summary><i>S&eacute;bastien Colla (UCLouvain)</i> - <strong> Automatic Performance Estimation for Decentralized Optimization  </strong></summary>
+                <summary><i>S&eacute;bastien Colla (UCLouvain)</i> - <strong> Automated Performance Estimation for Decentralized Optimization via Network Size Independent Problems </strong></summary>
                     We present a methodology to automatically compute worst-case performance bounds for a large class of
                     first-order decentralized optimization algorithms. These algorithms aim at minimizing the average
                     of local functions that are distributed across a network of agents. They typically combine local
                     computations and consensus steps. Our methodology is based on the approach of Performance Estimation
                     Problem (PEP), which allows computing the worst-case performance and a worst-case instance of
-                    first-order optimization algorithms by solving an SDP. We propose two ways of representing consensus
-                    steps in PEPs, which allow writing and solving PEPs for decentralized optimization. The first
-                    formulation is exact but specific to a given averaging matrix. The second formulation is a relaxation
-                    but provides guarantees valid over an entire class of averaging matrices, characterized by their
-                    spectral range. This formulation often allows recovering a posteriori the worst possible averaging
-                    matrix for the given algorithm. We apply our methodology to three different decentralized methods.
-                    For each of them, we obtain numerically tight worst-case performance bounds that significantly
-                    improve on the existing ones, as well as insights about the parameters tuning and the worst
-                    communication networks. <br>
-                    Preprint:  <a href="https://arxiv.org/pdf/2203.05963.pdf " target="_blank"> https://arxiv.org/pdf/2203.05963.pdf </a>
+                    first-order optimization algorithms by solving an SDP.
+                    In previous work, we propose two ways of representing consensus steps in PEPs, which allow writing and solving PEPs for decentralized optimization.
+                    In these formulations, the size of the PEP is growing with the number of agents in the network but in most cases, the worst-case guarantees obtained are not changing with the number of agents.
+                    In this work we therefore propose a new PEP formulation for decentralized optimization whose size is independent of the number of agents in the network.
+                    For this purpose, we take a global view of the decentralized problem and we also decouple the consensus subspace and its orthogonal complement.
+                    We apply our methodology to different decentralized methods such as DGD, DIGing and EXTRA and obtain numerically tight performance guarantees that are valid for any network size.
                 </details>
+                [<a href="https://arxiv.org/pdf/2210.00695.pdf " target="_blank"> Preprint </a>, <a href="assets\slides\PEP-talks-2023_S.COLLA.pdf"  target="_blank"> Slides </a>, <a href="https://youtu.be/VLIKNN8fmMU"  target="_blank"> Video </a> ]
             </td>
 
     </table>
@@ -224,7 +221,7 @@
                     we provide tight complexity analyses for the Proximal Point, Extragradient, and Optimistic Gradient
                     methods in this setup, closing some questions on their working guarantees beyond monotonicity.
                 </details>
-                <br>
+                [<a href="https://arxiv.org/pdf/2210.13831.pdf" target="_blank"> Preprint </a>, <a href="assets\slides\PEP_Talks2023_Negative_comonotonicity.pdf"  target="_blank"> Slides </a>] <br> <br>
                 <details>
                 <summary><i>Moslem Zamani (Tilburg University)</i> - <strong>The exact worst-case convergence rate of the alternating
                     direction method of multipliers  </strong> </summary>
@@ -431,7 +428,9 @@
                 [2] Shuvomoy Das Gupta, Bart P.G. Van Parys, Ernest K. Ryu, “Branch-and-Bound Performance Estimation Programming: A Unified Methodology for Constructing Optimal Optimization Methods”, 2022. <a href="https://arxiv.org/pdf/2203.07305.pdf" target="_blank"> PDF</a>,  <a href="https://github.com/Shuvomoy/BnB-PEP-code" target="_blank"> Code</a> <br>
 
               </details>
+              [<a href="https://arxiv.org/pdf/2301.01530.pdf" target="_blank"> Preprint </a>, <a href="assets\slides\PEP_talk_2023_talk.sozi.html"  target="_blank"> Slides </a>, <a href="https://youtu.be/IR5nAk6hDGI"  target="_blank"> Video </a> ]
             </td>
+
         </tr>
     </table>
 
